@@ -1,0 +1,12 @@
+<div class="MAIN_BOX">
+    <br><br>
+    <input [(ngModel)] = "newHeroName">
+    <button (click)="addHero()">Add Hero</button>
+    <br><br>
+    <ul class="heroes">
+        <li class="Text" *ngFor="let Hero of Heroes" routerLink="/manager/{{Hero.id}}">
+            <span class="badge">{{Heroes[Hero.id].id}}</span>
+            {{Heroes[Hero.id].name}}
+        </li>
+    </ul>
+</div>

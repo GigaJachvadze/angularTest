@@ -1,0 +1,10 @@
+<div class="MAIN_CONTAINER" *ngIf="selectedHero">
+    <h3 class="Text">Name: {{selectedHero.name}}</h3>
+    <h3 class="Text">Id: {{selectedHero.id}}</h3>
+
+    <input [(ngModel)] = "selectedHero.name" placeholder="Name">
+
+    <br><br>
+
+    <button (click) = "Back()">Go Back</button>
+</div>

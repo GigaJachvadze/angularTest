@@ -1,0 +1,6 @@
+<h2>Top Heroes</h2>
+<div class="MAIN_CONTAINER">
+    <div *ngFor="let hero of heroes" class="col" routerLink="/manager/{{hero.id}}">
+        <p class="child">{{heroes[hero.id].name}}</p>
+    </div>
+</div>
